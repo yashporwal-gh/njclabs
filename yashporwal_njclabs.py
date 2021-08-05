@@ -14,12 +14,15 @@ cursor.execute(" INSERT INTO Movies VALUES ('The Pianist','Adrien Brody','Emilia
 cursor.execute(" INSERT INTO Movies VALUES ('Inception','Leonardo DiCaprio','Elliot Page',2010,'Christopher Nolan')")
 cursor.execute(" INSERT INTO Movies VALUES ('Joker','Joaquin Phoenix','Zazie Beetz',2019,'Todd Phillips')")
 cursor.execute(" INSERT INTO Movies VALUES ('Fight Club','Brad Pitt','Helena Bonham Carter',1999,'David Fincher')")
-
+cursor.execute(" INSERT INTO Movies VALUES ('Jurassic Park','Sam Neill','Laura Dern',1993,'Steven Spielberg')")
+cursor.execute(" INSERT INTO Movies VALUES ('Hera Pheri','Akshay Kumar','Tabu',2000,'Priyadarshan')")
+cursor.execute(" INSERT INTO Movies VALUES ('Logan','Hugh Jackman','Dafne Keen',2017,'James Mangold')")
+cursor.execute(" INSERT INTO Movies VALUES ('Dangal','Aamir Khan','Sakshi Tanwar',2016,'Nitesh Tiwari')")
+cursor.execute(" INSERT INTO Movies VALUES ('Mission Impossible','Tom Cruise','Thandiwe Newton',2000,'John W00')")
 
 #select query
 cursor.execute("SELECT * FROM Movies")
 result1=cursor.fetchall()
-
 cursor.execute("SELECT * FROM Movies WHERE lead_actor='Leonardo DiCaprio' ")
 result2=cursor.fetchall()
 
