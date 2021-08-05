@@ -2,7 +2,9 @@ create database Database_Movies;
 
 use Database_Movies;
 
-CREATE TABLE Movies(movie_name varchar(20) ,lead_actor varchar(20),actress varchar(20),year_of_release INT,director_name varchar(20),PRIMARY KEY(movie_name));
+
+CREATE TABLE Movies(movie_name varchar(20),lead_actor varchar(20),actress varchar(20),year_of_release INT,director_name varchar(20),PRIMARY KEY(movie_name));
+
 
 INSERT INTO Movies VALUES ('Pulp Fiction','Tim Roth','Amanda Plummer',1994,'Quentin Tarantino');
 INSERT INTO Movies VALUES ('The Pianist','Adrien Brody','Emilia Fox',2002,'Roman Polanski');
@@ -15,5 +17,7 @@ INSERT INTO Movies VALUES ('Logan','Hugh Jackman','Dafne Keen',2017,'James Mango
 INSERT INTO Movies VALUES ('Dangal','Aamir Khan','Sakshi Tanwar',2016,'Nitesh Tiwari');
 INSERT INTO Movies VALUES ('Mission Impossible','Tom Cruise','Thandiwe Newton',2000,'John Woo');
 
-SELECT * FROM Movies;
+
+SELECT* FROM Movies;
+
 SELECT * FROM Movies WHERE lead_actor='Leonardo DiCaprio';
