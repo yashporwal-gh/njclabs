@@ -18,7 +18,7 @@ cursor.execute(" INSERT INTO Movies VALUES ('Jurassic Park','Sam Neill','Laura D
 cursor.execute(" INSERT INTO Movies VALUES ('Hera Pheri','Akshay Kumar','Tabu',2000,'Priyadarshan')")
 cursor.execute(" INSERT INTO Movies VALUES ('Logan','Hugh Jackman','Dafne Keen',2017,'James Mangold')")
 cursor.execute(" INSERT INTO Movies VALUES ('Dangal','Aamir Khan','Sakshi Tanwar',2016,'Nitesh Tiwari')")
-cursor.execute(" INSERT INTO Movies VALUES ('Mission Impossible','Tom Cruise','Thandiwe Newton',2000,'John W00')")
+cursor.execute(" INSERT INTO Movies VALUES ('Mission Impossible','Tom Cruise','Thandiwe Newton',2000,'John Woo')")
 
 #select query
 cursor.execute("SELECT * FROM Movies")
