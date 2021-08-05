@@ -26,6 +26,6 @@ result1=cursor.fetchall()
 cursor.execute("SELECT * FROM Movies WHERE lead_actor='Leonardo DiCaprio' ")
 result2=cursor.fetchall()
 
-#print the results
+#printing the results
 print(result1)
 print(result2)
