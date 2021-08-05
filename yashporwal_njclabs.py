@@ -1,13 +1,14 @@
 import sqlite3
+
+#database connnection
 connection=sqlite3.connect('Database_Movies.db')
 cursor=connection.cursor()
 
-#create query
+#create table query
 query_command=""" CREATE TABLE IF NOT EXISTS Movies(movie_name TEXT PRIMARY KEY,lead_actor TEXT,actress TEXT,year_of_release INTEGER,director_name TEXT) """
-
 cursor.execute(query_command)
 
-#insert query
+#insert into query
 cursor.execute(" INSERT INTO Movies VALUES ('Pulp Fiction','Tim Roth','Amanda Plummer',1994,'Quentin Tarantino')")
 cursor.execute(" INSERT INTO Movies VALUES ('The Pianist','Adrien Brody','Emilia Fox',2002,'Roman Polanski')")
 cursor.execute(" INSERT INTO Movies VALUES ('Inception','Leonardo DiCaprio','Elliot Page',2010,'Christopher Nolan')")
@@ -24,5 +25,4 @@ result2=cursor.fetchall()
 
 #print the results
 print(result1)
-
 print(result2)
